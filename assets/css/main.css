@@ -221,11 +221,11 @@ p:last-child { margin-bottom: 0; }
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 600;
-  color: rgba(255,255,255,0.85);
+  color: #ffffff !important;
   border-radius: var(--radius-sm);
   transition: var(--transition);
 }
-.nav-link:hover, .nav-link.active { color: var(--orange); background: rgba(255,107,44,0.12); }
+.nav-link:hover, .nav-link.active { color: var(--orange) !important; background: rgba(255,107,44,0.12); }
 .nav-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
 .nav-item:hover .nav-link svg { transform: rotate(180deg); }
 
@@ -324,8 +324,8 @@ p:last-child { margin-bottom: 0; }
 .mobile-nav-links .sub-link { padding-left: 2rem; font-size: 0.9rem; font-weight: 500; }
 .mobile-nav-links .sub-label { padding: 0.5rem 1rem 0.25rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 
-/* Page top offset */
-.page-body { padding-top: var(--header-h); }
+/* No top offset needed — header is position:sticky, not fixed */
+.page-body { padding-top: 0; }
 
 /* --- Hero Section --- */
 .hero {
