@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or utility paths if they exist
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+
+# Sitemap location
+Sitemap: https://www.digitalmarketingbirmingham.co.uk/sitemap.xml
+
+# Crawl delay (optional - uncomment if needed)
+# Crawl-delay: 10
