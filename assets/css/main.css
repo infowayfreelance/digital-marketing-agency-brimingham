@@ -107,8 +107,8 @@ p:last-child { margin-bottom: 0; }
 /* --- Section Header --- */
 .section-tag {
   display: inline-block;
-  background: rgba(255,107,44,0.1);
-  color: var(--orange);
+  background: rgba(255,107,44,0.12);
+  color: #A03A05;
   font-family: var(--font-heading);
   font-size: 0.8rem;
   font-weight: 700;
@@ -138,12 +138,12 @@ p:last-child { margin-bottom: 0; }
 }
 .btn-primary {
   background: var(--orange);
-  color: var(--white);
+  color: #0B1F3A;
   box-shadow: 0 4px 16px rgba(255,107,44,0.35);
 }
 .btn-primary:hover {
   background: #e55d20;
-  color: var(--white);
+  color: #0B1F3A;
   box-shadow: 0 6px 24px rgba(255,107,44,0.45);
   transform: translateY(-2px);
 }
@@ -203,7 +203,7 @@ p:last-child { margin-bottom: 0; }
   background: var(--orange);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--white);
+  color: #0B1F3A;
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.1rem;
@@ -719,7 +719,7 @@ footer {
 }
 .footer-brand .logo-text strong,
 .footer-brand .logo-text span { color: var(--white); }
-.footer-brand .logo-mark { background: var(--orange); color: var(--white); }
+.footer-brand .logo-mark { background: var(--orange); color: #0B1F3A; }
 .footer-desc { margin: 1rem 0; font-size: 0.875rem; line-height: 1.7; }
 .footer-contact { display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem; }
 .footer-contact a { color: rgba(255,255,255,0.75); }
