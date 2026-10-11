@@ -107,8 +107,8 @@ p:last-child { margin-bottom: 0; }
 /* --- Section Header --- */
 .section-tag {
   display: inline-block;
-  background: rgba(255,107,44,0.1);
-  color: var(--orange);
+  background: rgba(255,107,44,0.12);
+  color: #A03A05;
   font-family: var(--font-heading);
   font-size: 0.8rem;
   font-weight: 700;
@@ -138,12 +138,12 @@ p:last-child { margin-bottom: 0; }
 }
 .btn-primary {
   background: var(--orange);
-  color: var(--white);
+  color: #0B1F3A;
   box-shadow: 0 4px 16px rgba(255,107,44,0.35);
 }
 .btn-primary:hover {
   background: #e55d20;
-  color: var(--white);
+  color: #0B1F3A;
   box-shadow: 0 6px 24px rgba(255,107,44,0.45);
   transform: translateY(-2px);
 }
@@ -182,15 +182,14 @@ p:last-child { margin-bottom: 0; }
 
 /* --- Header --- */
 #header {
-  position: fixed;
+  position: sticky;
   top: 0; left: 0; right: 0;
   height: var(--header-h);
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
+  background: var(--navy);
   z-index: 1000;
   transition: box-shadow 0.3s ease;
 }
-#header.scrolled { box-shadow: var(--shadow-md); }
+#header.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
 .header-inner {
   display: flex;
   align-items: center;
@@ -201,17 +200,17 @@ p:last-child { margin-bottom: 0; }
 .logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
 .logo-mark {
   width: 38px; height: 38px;
-  background: var(--navy);
+  background: var(--orange);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--orange);
+  color: #0B1F3A;
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.1rem;
 }
 .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.logo-text strong { font-family: var(--font-heading); font-weight: 800; font-size: 1rem; color: var(--navy); }
-.logo-text span { font-size: 0.7rem; color: var(--muted); font-weight: 500; letter-spacing: 0.02em; }
+.logo-text strong { font-family: var(--font-heading); font-weight: 800; font-size: 1rem; color: var(--white); }
+.logo-text span { font-size: 0.7rem; color: rgba(255,255,255,0.6); font-weight: 500; letter-spacing: 0.02em; }
 
 /* Nav */
 .nav { display: flex; align-items: center; gap: 0.25rem; }
@@ -222,11 +221,11 @@ p:last-child { margin-bottom: 0; }
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--dark);
+  color: #ffffff !important;
   border-radius: var(--radius-sm);
   transition: var(--transition);
 }
-.nav-link:hover, .nav-link.active { color: var(--orange); background: rgba(255,107,44,0.06); }
+.nav-link:hover, .nav-link.active { color: var(--orange) !important; background: rgba(255,107,44,0.12); }
 .nav-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
 .nav-item:hover .nav-link svg { transform: rotate(180deg); }
 
@@ -272,7 +271,7 @@ p:last-child { margin-bottom: 0; }
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 0.9rem;
-  color: var(--navy);
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
 }
 .header-phone svg { color: var(--orange); }
@@ -325,8 +324,8 @@ p:last-child { margin-bottom: 0; }
 .mobile-nav-links .sub-link { padding-left: 2rem; font-size: 0.9rem; font-weight: 500; }
 .mobile-nav-links .sub-label { padding: 0.5rem 1rem 0.25rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 
-/* Page top offset */
-.page-body { padding-top: var(--header-h); }
+/* No top offset needed — header is position:sticky, not fixed */
+.page-body { padding-top: 0; }
 
 /* --- Hero Section --- */
 .hero {
@@ -720,7 +719,7 @@ footer {
 }
 .footer-brand .logo-text strong,
 .footer-brand .logo-text span { color: var(--white); }
-.footer-brand .logo-mark { background: var(--orange); color: var(--white); }
+.footer-brand .logo-mark { background: var(--orange); color: #0B1F3A; }
 .footer-desc { margin: 1rem 0; font-size: 0.875rem; line-height: 1.7; }
 .footer-contact { display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem; }
 .footer-contact a { color: rgba(255,255,255,0.75); }
